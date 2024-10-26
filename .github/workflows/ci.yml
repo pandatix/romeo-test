@@ -9,4 +9,4 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: pandatix/romeo-action@main
+      - uses: pandatix/romeo-action@3caade414821c6b6edce1a2eb2efb8d2a589947e

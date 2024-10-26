@@ -24,6 +24,14 @@ jobs:
           pulumi login --local
       
       - name: Romeo environment
+        id: romeo
         uses: pandatix/romeo-action@main
+        with:
+          kubeconfig: toto
         env:
           PULUMI_CONFIG_PASSPHRASE: ""
+
+      - name: Outputs
+        run: |
+          echo "port: ${{ steps.romeo.outputs.port }}"
+          echo "claimName: ${{ steps.romeo.outputs.claim-name }}"

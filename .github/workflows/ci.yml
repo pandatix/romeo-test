@@ -9,5 +9,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4.1.6
+      
       - name: Romeo environment
         uses: pandatix/romeo-action@2b3b826935a61255cf1ccdac3f86321f81ae8fe2

@@ -1,0 +1,10 @@
+name: Check dist
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    - uses: pandatix/romeo-action@main

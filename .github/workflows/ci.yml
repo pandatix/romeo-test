@@ -7,4 +7,6 @@ on:
 
 jobs:
   test:
-    - uses: pandatix/romeo-action@main
+    runs-on: ubuntu-latest
+    steps:
+      - uses: pandatix/romeo-action@main

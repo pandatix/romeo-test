@@ -18,7 +18,7 @@ jobs:
           go-version-file: deploy/go.mod
 
       - name: Downloading dependencies
-        run: go mod download
+        run: cd deploy && go mod download
 
       - uses: pulumi/actions@v6
 

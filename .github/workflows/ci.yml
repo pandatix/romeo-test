@@ -25,3 +25,5 @@ jobs:
       
       - name: Romeo environment
         uses: pandatix/romeo-action@main
+        env:
+          PULUMI_CONFIG_PASSPHRASE: ""

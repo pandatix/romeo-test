@@ -9,4 +9,5 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: pandatix/romeo-action@dd5638fac3cc1c98aedac758a9ad8eb6213be337
+      - name: Romeo environment
+        uses: pandatix/romeo-action@dd5638fac3cc1c98aedac758a9ad8eb6213be337

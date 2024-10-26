@@ -1,4 +1,4 @@
-name: Check dist
+name: Romeo test
 
 on:
   push:
@@ -28,8 +28,6 @@ jobs:
         uses: pandatix/romeo-action@main
         with:
           kubeconfig: toto
-        env:
-          PULUMI_CONFIG_PASSPHRASE: ""
 
       - name: Outputs
         run: |
